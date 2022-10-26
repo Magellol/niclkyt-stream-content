@@ -1,0 +1,19 @@
+{
+  "key1": {
+    // Standard variable interpolation with JSX
+    "message": "{username} liked your photo. View it on your <link>profile</link>.",
+    "backend": "tsx"
+  },
+
+  "key2": {
+    // Using types (number)
+    "message": "{n, number} photos have been published in the {topic} topic.",
+    "backend": "ts"
+  },
+
+  "key3": {
+    // Using select (represents union types ) closed | open
+    "message": "This topic is {status, select, closed {unfortunately closed} open {now open}}",
+    "backend": "ts"
+  }
+}
